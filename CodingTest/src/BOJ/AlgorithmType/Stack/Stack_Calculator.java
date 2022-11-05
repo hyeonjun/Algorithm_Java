@@ -57,24 +57,20 @@ public class Stack_Calculator {
 
     try {
       for (String now : infix) {
-        switch (now) {
-          case "+": case "-": case "*": case "/":
-            while (!stack.isEmpty() && priority(stack.peek()) >= priority(now)) {
-              sb.append(stack.pop());
-            }
-            stack.add(now);
-            break;
-          case "(":
-            stack.add(now);
-            break;
-          case ")":
-            while (!stack.isEmpty() && !stack.peek().equals("(")) {
-              sb.append(stack.pop());
-            }
-            stack.pop();
-            break;
-          default:
-            sb.append(now);
+        if (operator.contains(now)) {
+          while (!stack.isEmpty() && priority(stack.peek()) >= priority(now)) {
+            sb.append(stack.pop());
+          }
+          stack.add(now);
+        } else if (now.equals("(")) {
+          stack.add(now);
+        } else if (now.equals(")")) {
+          while (!stack.isEmpty() && !stack.peek().equals("(")) {
+            sb.append(stack.pop());
+          }
+          stack.pop();
+        } else {
+          sb.append(now);
         }
       }
     } catch (Exception e) {
