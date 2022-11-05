@@ -1,4 +1,4 @@
 /out
 *.iml
 /.idea
-/BOJ/src/realTest
+/CodingTest/src/realTest
