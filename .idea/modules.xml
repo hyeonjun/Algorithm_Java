@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BOJ/BOJ.iml" filepath="$PROJECT_DIR$/BOJ/BOJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodingTest/BOJ.iml" filepath="$PROJECT_DIR$/CodingTest/BOJ.iml" />
       <module fileurl="file://$PROJECT_DIR$/codingPractice/codingPractice.iml" filepath="$PROJECT_DIR$/codingPractice/codingPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_codingTest.iml" filepath="$PROJECT_DIR$/.idea/java_codingTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/zumInternet_codingTest/zumInternet_codingTest.iml" filepath="$PROJECT_DIR$/zumInternet_codingTest/zumInternet_codingTest.iml" />
